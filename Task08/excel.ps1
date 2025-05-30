@@ -12,7 +12,7 @@ $workbook = $excel.Workbooks.Add()
 $worksheet = $workbook.Worksheets.Item(1)
 
 $cell = $worksheet.Cells.Item(2, 2)
-$cell.Value2 = "Привет от PowerShell"
+$cell.Value2 = "РџСЂРёРІРµС‚ РѕС‚ PowerShell"
 $cell.Font.Size = 12
 $cell.Font.Italic = $true
 

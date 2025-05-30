@@ -4,7 +4,7 @@ function Show-Date_Info {
     $month = $date.Month
     $year = $date.Year
 
-    Write-Host "Сегодня: $($date.ToString("dd.MM.yyyy"))"
+    Write-Host "Today is: $($date.ToString("dd.MM.yyyy"))"
 
     function Get-Fact($number) {
         $url = "http://numbersapi.com/$number/math"
@@ -12,7 +12,7 @@ function Show-Date_Info {
             $fact = Invoke-RestMethod -Uri $url
             return $fact
         } catch {
-            return "Не удалось получить информацию о числе $number."
+            return "No one cool fact about $number, sorry("
         }
     }
 
